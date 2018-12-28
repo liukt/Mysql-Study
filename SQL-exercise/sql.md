@@ -1,4 +1,10 @@
-
+- 在CentOS7安装好Mysql
+- 连接到Mysql服务器：
+```
+[root@host]# mysql -u root -p
+Enter password:*******
+```
+- xshell终端测试
 ```
 mysql> show databases;
 +--------------------+
