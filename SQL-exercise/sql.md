@@ -114,4 +114,41 @@ mysql> show tables;
 +--------------+
 2 rows in set (0.00 sec)
 
+#describe
+mysql> describe account;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| id         | bigint(20)   | YES  |     | NULL    |       |
+| createTmie | datetime     | YES  |     | NULL    |       |
+| ip         | varchar(255) | YES  |     | NULL    |       |
+| mobile     | varchar(255) | YES  |     | NULL    |       |
+| nickname   | varchar(255) | YES  |     | NULL    |       |
+| passwd     | varchar(255) | YES  |     | NULL    |       |
+| username   | varchar(255) | YES  |     | NULL    |       |
+| avatar     | varchar(255) | YES  |     | NULL    |       |
+| brief      | text         | YES  |     | NULL    |       |
+| job        | varchar(255) | YES  |     | NULL    |       |
+| location   | varchar(255) | YES  |     | NULL    |       |
+| qq         | varchar(255) | YES  |     | NULL    |       |
+| gender     | int(11)      | YES  |     | NULL    |       |
+| city       | varchar(255) | YES  |     | NULL    |       |
+| province   | varchar(255) | YES  |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+15 rows in set (0.03 sec)
+
+#删除表
+mysql> drop table account1;
+Query OK, 0 rows affected (0.01 sec)
+
+#显示删除后剩下的表格
+mysql> show tables;
++--------------+
+| Tables_in_gc |
++--------------+
+| account      |
++--------------+
+1 row in set (0.00 sec)
+
+
 ```
