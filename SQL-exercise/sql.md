@@ -75,6 +75,14 @@ mysql> CREATE TABLE account(
     ->     );
 Query OK, 0 rows affected (0.01 sec)
 
+#显示数据库钟的所有表
+mysql> show tables;
++--------------+
+| Tables_in_gc |
++--------------+
+| account      |
++--------------+
+1 row in set (0.00 sec)
 
 
 ```
