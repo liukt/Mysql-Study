@@ -75,7 +75,7 @@ mysql> CREATE TABLE account(
     ->     );
 Query OK, 0 rows affected (0.01 sec)
 
-#显示数据库钟的所有表
+#显示当前使用的数据库中的所有表
 mysql> show tables;
 +--------------+
 | Tables_in_gc |
@@ -84,5 +84,34 @@ mysql> show tables;
 +--------------+
 1 row in set (0.00 sec)
 
+#创建表 account1
+mysql> CREATE TABLE account1(                                                                         
+    ->     id bigint(20),
+    ->     createTmie datetime,
+    ->     ip varchar(255),
+    ->     mobile varchar(255),
+    ->     nickname varchar(255),
+    ->     passwd varchar(255),
+    ->     username varchar(255),
+    ->     avatar varchar(255),
+    ->     brief text,
+    ->     job varchar(255),
+    ->     location varchar(255),
+    ->     qq varchar(255),
+    ->     gender int(11),
+    ->     city varchar(255),
+    ->     province varchar(255)
+    ->     );
+Query OK, 0 rows affected (0.01 sec)
+
+#显示当前使用的数据库中的所有表
+mysql> show tables;
++--------------+
+| Tables_in_gc |
++--------------+
+| account      |
+| account1     |
++--------------+
+2 rows in set (0.00 sec)
 
 ```
